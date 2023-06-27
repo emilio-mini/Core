@@ -2,7 +2,7 @@
 
 .updates {
   position: fixed;
-  left: 55rem;
+  left: calc($spacer-left + 45rem);
   top: 0;
 
   display: flex;

@@ -14,7 +14,7 @@ import {
   MapPin,
   Link,
   GraduationCap,
-  Target, HeartPulse, Download, ChevronLeft, ChevronRight, Maximize2, Aperture
+  Target, HeartPulse, Download, ChevronLeft, ChevronRight, Maximize2, Aperture, Gamepad2, Coffee
 } from "lucide-angular";
 import { NgOptimizedImage} from "@angular/common";
 import { TimelineComponent } from './components/timeline/timeline.component';
@@ -49,7 +49,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
       ChevronLeft,
       ChevronRight,
       Maximize2,
-      Aperture
+      Aperture,
+      Gamepad2,
+      Coffee
     }),
     NgOptimizedImage
   ],

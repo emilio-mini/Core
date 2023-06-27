@@ -32,6 +32,56 @@ p {
   width: 40rem;
 }
 
+button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0 1.2rem;
+  height: 3rem;
+
+  background-color: $color-black;
+  color: $color-grey;
+
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: $color-teal;
+}
+
+button > lucide-icon {
+  padding-top: 0.15rem;
+}
+
+button > a {
+  font-size: 1.2rem;
+}
+
+button.outlined {
+  color: $color-black;
+  background-color: transparent;
+
+  border: 0.2rem solid $color-black;
+
+  transition: border-color 0.3s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+button.outlined:hover {
+  background-color: transparent;
+
+  color: $color-blue;
+  border-color: $color-blue;
+}
+
 .striped {
   z-index: -10;
   display: block;

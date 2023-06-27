@@ -32,6 +32,17 @@
   </section>
 
   <section *ngIf="navService.selectedIndex === 3" class="section-3">
+    <div>
+      <button title="This button opens the game in a new tab" (click)="playClick()">
+        <lucide-icon name="gamepad-2"></lucide-icon>
+        <a>Play now</a>
+      </button>
+      <button class="outlined" title="Sparky longs for some hot chocolate ʕ•ᴥ•ʔ" (click)="chocolateClick()">
+        <lucide-icon name="coffee"></lucide-icon>
+        <a>Donate</a>
+      </button>
+    </div>
+
     <app-updates></app-updates>
   </section>
 

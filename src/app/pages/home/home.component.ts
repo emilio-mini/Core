@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component} from '@angular/core';
 import {NavService} from "../../services/nav.service";
 import {TimelineData} from "../../components/timeline/timeline.component";
 
@@ -96,6 +96,14 @@ export class HomeComponent {
     } else if (event.deltaY > 0) {
       this.navService.down();
     }
+  }
+
+  playClick(): void {
+    window.open('https://spark.emilio-mini.me/', '_blank');
+  }
+
+  chocolateClick(): void {
+    window.location.href = 'https://paypal.me/emiliominiberger';
   }
 
 }
