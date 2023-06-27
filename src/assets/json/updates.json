@@ -1,0 +1,48 @@
+[
+  {
+    "timestamp": "2023-06-27T16:57:32.773Z",
+    "title": "Update #3",
+    "text": "Development of <b class='highlight teal'>Spark 2.0</b> is progressing smoothly. Landing page is almost complete and close to the final look of the game",
+    "screenshots": [
+      {
+        "src": "update-1.png",
+        "alt": "Screenshot of the Spark landing page",
+        "description": "Spark landing page"
+      },
+      {
+        "src": "update-1.png",
+        "alt": "Screenshot of the Spark landing page",
+        "description": "Spark landing page"
+      },
+      {
+        "src": "update-1.png",
+        "alt": "Screenshot of the Spark landing page",
+        "description": "Spark landing page"
+      }
+    ]
+  },
+  {
+    "timestamp": "2023-06-27T16:57:32.773Z",
+    "title": "Update #2",
+    "text": "Development of <b class='highlight teal'>Spark 2.0</b> is progressing smoothly. Landing page is almost complete and close to the final look of the game",
+    "screenshots": [
+      {
+        "src": "update-1.png",
+        "alt": "Screenshot of the Spark landing page",
+        "description": "Spark landing page"
+      }
+    ]
+  },
+  {
+    "timestamp": "2023-06-27T16:57:32.773Z",
+    "title": "Update #1",
+    "text": "Development of <b class='highlight teal'>Spark 2.0</b> is progressing smoothly. Landing page is almost complete and close to the final look of the game",
+    "screenshots": [
+      {
+        "src": "update-1.png",
+        "alt": "Screenshot of the Spark landing page",
+        "description": "Spark landing page"
+      }
+    ]
+  }
+]

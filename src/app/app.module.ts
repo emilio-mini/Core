@@ -16,9 +16,11 @@ import {
   GraduationCap,
   Target, HeartPulse, Download, ChevronLeft, ChevronRight, Maximize2, Aperture
 } from "lucide-angular";
-import {NgOptimizedImage} from "@angular/common";
+import { NgOptimizedImage} from "@angular/common";
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { UpdatesComponent } from './components/updates/updates.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     DotnavComponent,
     TitleComponent,
     TimelineComponent,
-    GalleryComponent
+    GalleryComponent,
+    UpdatesComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

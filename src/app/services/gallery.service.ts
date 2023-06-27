@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import data from '../../assets/img/data.json';
+import data from '../../assets/json/gallery.json';
 
 export type ImageData = {
   src: string;

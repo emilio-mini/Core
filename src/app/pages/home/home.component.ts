@@ -90,7 +90,6 @@ export class HomeComponent {
   ) {
   }
 
-  @HostListener('document:mousewheel', ['$event'])
   onScroll(event: WheelEvent): void {
     if (event.deltaY < 0) {
       this.navService.up();

@@ -1,0 +1,34 @@
+@import '../../../assets/theme/default.theme';
+
+.carousel {
+  margin-top: 2rem;
+  width: 30rem;
+}
+
+.carousel > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.functions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-top: 0.5rem;
+}
+
+.functions > lucide-icon {
+  cursor: pointer;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.functions > lucide-icon:hover {
+  color: $color-teal;
+}
+
+.functions > a {
+  user-select: none;
+}

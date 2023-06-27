@@ -1,0 +1,10 @@
+<div class="carousel">
+  <img src="{{pathPrefix}}{{images[selectedIndex].src}}" [alt]="images[selectedIndex].alt">
+  <div class="functions">
+    <lucide-icon *ngIf="images.length > 1" name="chevron-left" title="Previous screenshot" (click)="previous()"></lucide-icon>
+    <lucide-icon name="download"></lucide-icon>
+    <a *ngIf="images.length > 1">{{selectedIndex + 1}} / {{images.length}}</a>
+    <lucide-icon name="maximize-2"></lucide-icon>
+    <lucide-icon *ngIf="images.length > 1" name="chevron-right" title="Next screenshot" (click)="next()"></lucide-icon>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="updates">
+  <div *ngFor="let update of updates">
+    <a title="Last updated {{format(update.timestamp, 'Do MMMM YYYY [at] HH:mm:ss [UTC]Z')}}">{{format(update.timestamp, 'Do MMM YYYY')}}</a>
+    <h3>{{update.title}}</h3>
+    <p [innerHTML]="update.text"></p>
+    <app-carousel pathPrefix="../../../assets/img/" [images]="update.screenshots"></app-carousel>
+  </div>
+</div>
