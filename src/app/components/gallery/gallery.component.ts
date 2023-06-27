@@ -14,16 +14,10 @@ export class GalleryComponent {
   topIsTop = true;
   blocked = false;
 
-  readonly timeout: NodeJS.Timer;
 
   constructor(
     public galleryService: GalleryService
   ) {
-    this.timeout = setInterval(() => {
-      this.blocked = true;
-      this.galleryService.direction = 'forward';
-      this.fade();
-    }, 10000);
   }
 
   fade(): void {
@@ -50,7 +44,6 @@ export class GalleryComponent {
     }
 
     this.blocked = true;
-    this.timeout.refresh();
     if (this.galleryService.direction !== 'backward') {
       this.galleryService.direction = 'backward';
     }
