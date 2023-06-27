@@ -18,6 +18,7 @@ export class GalleryComponent {
   constructor(
     public galleryService: GalleryService
   ) {
+    galleryService.randomize();
   }
 
   fade(): void {

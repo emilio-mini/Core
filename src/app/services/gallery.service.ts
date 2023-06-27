@@ -56,4 +56,8 @@ export class GalleryService {
     }
   }
 
+  randomize(): void {
+    this.currentImage = Math.floor(Math.random() * this.imageData.length)
+  }
+
 }

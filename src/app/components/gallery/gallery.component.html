@@ -1,10 +1,12 @@
 <div class="gallery">
-  <img #top src="../../../assets/img/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
-  <img #bottom src="../../../assets/img/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
+  <p>Shot on {{galleryService.current.device}}</p>
+
+  <img #top src="../../../assets/img/compressed/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
+  <img #bottom src="../../../assets/img/compressed/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
 
   <div class="footer striped inverted">
     <div>
-      <a download="photograph" href="../../../assets/img/{{galleryService.current.src}}"><lucide-icon name="download"></lucide-icon></a>
+      <a download="{{galleryService.current.location}}" href="../../../assets/img/original/{{galleryService.current.download}}"><lucide-icon name="download"></lucide-icon></a>
       <lucide-icon name="chevron-left" (click)="previous()" title="Previous image"></lucide-icon>
       <lucide-icon name="chevron-right" (click)="next()" title="Next image"></lucide-icon>
       <lucide-icon name="maximize-2"></lucide-icon>

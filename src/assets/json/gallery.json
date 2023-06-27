@@ -1,6 +1,6 @@
 [
   {
-    "src": "gallery-0.jpg",
+    "src": "gallery-0-min.jpg",
     "aperture": 1.85,
     "shutterSpeed": "1/703",
     "focalLength": 6.81,
@@ -10,10 +10,10 @@
     "device": "Google Pixel 7 Pro",
     "location": "Kaprun Mountain Reservoirs",
     "coordinates": "47.169136,12.721819",
-    "download": ""
+    "download": "gallery-0.jpg"
   },
   {
-    "src": "gallery-1.jpg",
+    "src": "gallery-1-min.jpg",
     "aperture": 1.85,
     "shutterSpeed": "1/8696",
     "focalLength": 6.81,
@@ -23,10 +23,10 @@
     "device": "Google Pixel 7 Pro",
     "location": "Krimmler Waterfalls",
     "coordinates": "47.210311,12.168633",
-    "download": ""
+    "download": "gallery-1.jpg"
   },
   {
-    "src": "gallery-2.jpg",
+    "src": "gallery-2-min.jpg",
     "aperture": 1.85,
     "shutterSpeed": "1/4000",
     "focalLength": 6.81,
@@ -36,6 +36,162 @@
     "device": "Google Pixel 7 Pro",
     "location": "Krimmler Waterfalls",
     "coordinates": "47.206750,12.171267",
-    "download": ""
+    "download": "gallery-2.jpg"
+  },
+  {
+    "src": "gallery-3-min.jpg",
+    "aperture": 3.5,
+    "shutterSpeed": "1/357",
+    "focalLength": 19,
+    "iso": 18,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Zeller See",
+    "coordinates": "47.314406,12.811181",
+    "download": "gallery-3.jpg"
+  },
+  {
+    "src": "gallery-4-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/57",
+    "focalLength": 6.81,
+    "iso": 77,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Sigmund Thun Klamm",
+    "coordinates": "47.257878,12.737356",
+    "download": "gallery-4.jpg"
+  },
+  {
+    "src": "gallery-5-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/1919",
+    "focalLength": 6.81,
+    "iso": 53,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Sigmund Thun Klamm",
+    "coordinates": "47.231242,12.725850",
+    "download": "gallery-5.jpg"
+  },
+  {
+    "src": "gallery-6-min.jpg",
+    "aperture": 3.5,
+    "shutterSpeed": "1/82",
+    "focalLength": 19,
+    "iso": 17,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Sigmund Thun Klamm",
+    "coordinates": "47.255744,12.736289",
+    "download": "gallery-6.jpg"
+  },
+  {
+    "src": "gallery-7-min.jpg",
+    "aperture": 2.2,
+    "shutterSpeed": "1/139",
+    "focalLength": 1.95,
+    "iso": 45,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Sigmund Thun Klamm",
+    "coordinates": "47.257297,12.737239",
+    "download": "gallery-7.jpg"
+  },
+  {
+    "src": "gallery-8-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/2375",
+    "focalLength": 6.81,
+    "iso": 38,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Sigmund Thun Klamm",
+    "coordinates": "47.257878,12.737344",
+    "download": "gallery-8.jpg"
+  },
+  {
+    "src": "gallery-9-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/1689",
+    "focalLength": 6.81,
+    "iso": 37,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Sigmund Thun Klamm",
+    "coordinates": "47.258269,12.737225",
+    "download": "gallery-9.jpg"
+  },
+  {
+    "src": "gallery-10-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/390",
+    "focalLength": 6.81,
+    "iso": 44,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Zeller See",
+    "coordinates": "47.339172,12.800350",
+    "download": "gallery-10.jpg"
+  },
+  {
+    "src": "gallery-11-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/2695",
+    "focalLength": 6.81,
+    "iso": 46,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Zeller See",
+    "coordinates": "47.326433,12.799408",
+    "download": "gallery-11.jpg"
+  },
+  {
+    "src": "gallery-12-min.jpg",
+    "aperture": 2.2,
+    "shutterSpeed": "1/25",
+    "focalLength": 1.95,
+    "iso": 554,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Kitzsteinhorn Gipfelwelt 3000",
+    "coordinates": "47.188919,12.684925",
+    "download": "gallery-12.jpg"
+  },
+  {
+    "src": "gallery-13-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/41",
+    "focalLength": 6.81,
+    "iso": 469,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Kitzsteinhorn Gipfelwelt 3000",
+    "coordinates": "47.187606,12.684897",
+    "download": "gallery-13.jpg"
+  },
+  {
+    "src": "gallery-14-min.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/6289",
+    "focalLength": 6.81,
+    "iso": 54,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Kitzsteinhorn Gipfelwelt 3000",
+    "coordinates": "47.189394,12.685000",
+    "download": "gallery-14.jpg"
   }
 ]

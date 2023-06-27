@@ -31,12 +31,12 @@ export class NavService {
     },
     {
       header: 'Photography',
-      content: 'Shot on Pixel 7 Pro',
+      content: '',
       inverted: true
     },
     {
       header: 'Spark',
-      content: 'Spark is an <b class="highlight teal">online</b>, <b class="highlight blue">multiplayer</b> card game, <b class="highlight red">developed by me</b> and running right in your favourite browser.\n' +
+      content: 'Spark is an <b class="highlight teal">online</b>, <b class="highlight blue">multiplayer</b> card game, <b class="highlight red">developed by me</b> and a friend of mine, running right in your favourite browser.\n' +
         '    <br><br>\n' +
         '    It started off as a school project back in the day before I decided to rewrite it from scratch.\n' +
         '    You can play the old version now or wait a while longer while I get the new version ready for release!',

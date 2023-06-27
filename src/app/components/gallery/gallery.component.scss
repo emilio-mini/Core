@@ -1,5 +1,10 @@
 @import '../../../assets/theme/default.theme';
 
+.gallery > p {
+  color: $color-grey;
+  line-height: 1.7rem;
+}
+
 .gallery > img {
   z-index: -50;
   position: fixed;
@@ -56,6 +61,8 @@
 
 .footer > h3 {
   font-size: 1.4rem;
+
+  cursor: help;
 }
 
 .footer > span {
