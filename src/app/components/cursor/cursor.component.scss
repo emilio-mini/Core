@@ -7,10 +7,16 @@
   height: 0.5rem;
   border-radius: 50%;
 
+  transform: translate(-50%, -50%);
+
   background-color: $color-black;
 
   pointer-events: none;
   opacity: 0;
+
+  transition: background-color 0.1s ease-in-out,
+  width 0.1s ease-in-out,
+  height 0.1s ease-in-out;
 }
 
 .cursor::after {
@@ -29,6 +35,26 @@
 
   border-radius: 50%;
   border: dashed 0.2rem $color-grey;
+
+  transition: left 0.1s ease-in-out,
+  top 0.1s ease-in-out,
+  width 0.1s ease-in-out,
+  height 0.1s ease-in-out;
+}
+
+.cursor.hold {
+  width: 0.7rem;
+  height: 0.7rem;
+
+  background-color: $color-teal;
+}
+
+.cursor.hold::after {
+  left: -0.65rem;
+  top: -0.65rem;
+
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 @keyframes cursorRotate {
