@@ -1,0 +1,68 @@
+@import '../../../assets/theme/default.theme';
+
+.gallery > img {
+  z-index: -50;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: cover;
+
+  transition: opacity 1s ease-in-out;
+}
+
+.gallery > img:last-of-type {
+  z-index: -60;
+}
+
+.gallery > .footer {
+  position: fixed;
+  right: $spacer-right;
+  bottom: $spacer-bottom;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+
+  padding: 1rem 2rem;
+
+  height: fit-content;
+  width: fit-content;
+
+  color: $color-grey;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer > div:first-child > lucide-icon {
+  cursor: pointer;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.footer > div:first-child > lucide-icon:hover {
+  color: $color-teal;
+}
+
+.footer > h3 {
+  font-size: 1.4rem;
+}
+
+.footer > span {
+  height: 0.4rem;
+  width: 90%;
+
+  margin: 0.5rem 0;
+
+  background-color: $color-grey;
+  border-radius: 0.2rem;
+}

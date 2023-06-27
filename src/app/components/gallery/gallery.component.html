@@ -1,0 +1,22 @@
+<div class="gallery">
+  <img #top src="../../../assets/img/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
+  <img #bottom src="../../../assets/img/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
+
+  <div class="footer striped inverted">
+    <div class="functions">
+      <lucide-icon name="download"></lucide-icon>
+      <lucide-icon name="chevron-left" (click)="previous()" title="Previous image"></lucide-icon>
+      <lucide-icon name="chevron-right" (click)="next()" title="Next image"></lucide-icon>
+      <lucide-icon name="maximize-2"></lucide-icon>
+    </div>
+    <h3 [title]="galleryService.current.coordinates">{{galleryService.current.location}}</h3>
+    <span></span>
+    <div>
+      <a>ƒ/{{galleryService.current.aperture}}</a>
+      <a>{{galleryService.current.shutterSpeed}}</a>
+      <a>{{galleryService.current.focalLength}}mm</a>
+      <a>ISO{{galleryService.current.iso}}</a>
+      <lucide-icon name="aperture"></lucide-icon>
+    </div>
+  </div>
+</div>

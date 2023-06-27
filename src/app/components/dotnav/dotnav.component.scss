@@ -1,0 +1,42 @@
+@import '../../../assets/theme/default.theme';
+
+.dotnav {
+  position: fixed;
+  top: $spacer-top;
+  right: $spacer-right;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.2rem;
+}
+
+.dotnav > span {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+
+  background-color: $color-black;
+  border-radius: 0.6rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease-in-out,
+              width 0.3s ease-in-out;
+}
+
+.dotnav.inverted > span {
+  background-color: $color-grey;
+}
+
+.dotnav > span:hover {
+  width: 1.8rem;
+}
+
+.dotnav > span.active {
+  width: 3.2rem;
+
+  background-color: $color-teal;
+
+  cursor: default;
+}

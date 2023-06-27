@@ -4115,6 +4115,13 @@ lru-cache@^9.1.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-9.1.2.tgz#255fdbc14b75589d6d0e73644ca167a8db506835"
   integrity sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ==
 
+lucide-angular@^0.252.0:
+  version "0.252.0"
+  resolved "https://registry.yarnpkg.com/lucide-angular/-/lucide-angular-0.252.0.tgz#65031f2b80cb4673e3512568d2aa25cf81cc47b2"
+  integrity sha512-4sLzDl8eu3xoI2xG+xsz8wdAZKs9kSU0v7mojnRIbGvMVUwz8fxfUnnhTW+fp7vuhuTd/8Q/dvl9m9KrDkzmXA==
+  dependencies:
+    tslib "^2.3.0"
+
 magic-string@0.29.0:
   version "0.29.0"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.29.0.tgz#f034f79f8c43dba4ae1730ffb5e8c4e084b16cf3"

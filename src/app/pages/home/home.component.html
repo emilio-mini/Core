@@ -1,0 +1,34 @@
+<div class="home">
+
+  <app-dotnav></app-dotnav>
+  <span class="striped nav" [class.inverted]="navService.current.inverted"></span>
+
+  <app-title [header]="navService.current.header" [index]="navService.selectedIndex + 1" [inverted]="navService.current.inverted"></app-title>
+  <p [class.inverted]="navService.current.inverted" [innerHTML]="navService.current.content"></p>
+
+  <section *ngIf="navService.selectedIndex === 0" class="section-0">
+    <img alt="It's a picture of me :)" draggable="false" src="../../assets/img/about.png"/>
+    <span class="striped img" [class.inverted]="navService.current.inverted"></span>
+
+    <div class="icons">
+      <a class="teal" href="mailto:business@emilio-mini.me">
+        <lucide-icon name="at-sign-icon" size="40" title="Send me a mail!"></lucide-icon>
+      </a>
+      <a class="blue" href="https://linkedin.com/in/emilio-mini">
+        <lucide-icon name="linkedin" size="40" title="LinkedIn"></lucide-icon>
+      </a>
+      <a class="red" href="https://www.instagram.com/emilio.mini/">
+        <lucide-icon name="instagram" size="40" title="Instagram"></lucide-icon>
+      </a>
+    </div>
+  </section>
+
+  <section *ngIf="navService.selectedIndex === 1" class="section-1">
+    <app-timeline [start]="2013" [end]="2024" [points]="[2013, 2017, 2022]" [data]="cvData"></app-timeline>
+  </section>
+
+  <section *ngIf="navService.selectedIndex === 2" class="section-2">
+    <app-gallery></app-gallery>
+  </section>
+
+</div>

@@ -1,0 +1,78 @@
+@import '../../../assets/theme/default.theme';
+
+.home {
+  padding-top: calc($spacer-top * 2);
+  padding-left: $spacer-left;
+}
+
+.home > .striped.nav {
+  position: fixed;
+  top: calc($spacer-top - 4vh);
+  right: calc($spacer-right - 1vw);
+
+  width: 8rem;
+  height: 14rem;
+}
+
+.home > p {
+  margin-top: 1rem;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.home > p.inverted {
+  color: $color-grey
+}
+
+.section-0 > img {
+  z-index: -10;
+  position: fixed;
+  bottom: $spacer-bottom;
+  right: $spacer-right;
+
+  height: 75vh;
+  aspect-ratio: 1/1;
+
+  user-select: none;
+}
+
+.section-0 > .striped.img {
+  z-index: -20;
+  position: fixed;
+  bottom: calc($spacer-bottom + 2rem);
+  right: calc($spacer-right + 4rem);
+
+
+  height: 38vh;
+  width: auto;
+  aspect-ratio: 15/10;
+}
+
+.section-0 > .icons {
+  position: fixed;
+  bottom: $spacer-bottom;
+  left: $spacer-left;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.icons > a {
+  cursor: pointer;
+  color: $color-black;
+
+  transition: color 0.3s ease-in-out;
+}
+
+.icons > a.teal:hover {
+  color: $color-teal;
+}
+
+.icons > a.blue:hover {
+  color: $color-blue;
+}
+
+.icons > a.red:hover {
+  color: $color-red;
+}

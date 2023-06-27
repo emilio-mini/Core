@@ -1,0 +1,41 @@
+[
+  {
+    "src": "gallery-0.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/703",
+    "focalLength": 6.81,
+    "iso": 46,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Kaprun Mountain Reservoirs",
+    "coordinates": "47.169136,12.721819",
+    "download": ""
+  },
+  {
+    "src": "gallery-1.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/8696",
+    "focalLength": 6.81,
+    "iso": 47,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Krimmler Waterfalls",
+    "coordinates": "47.210311,12.168633",
+    "download": ""
+  },
+  {
+    "src": "gallery-2.jpg",
+    "aperture": 1.85,
+    "shutterSpeed": "1/4000",
+    "focalLength": 6.81,
+    "iso": 46,
+    "originalResolution": "4080x3072",
+    "mp": "12.5",
+    "device": "Google Pixel 7 Pro",
+    "location": "Krimmler Waterfalls",
+    "coordinates": "47.206750,12.171267",
+    "download": ""
+  }
+]
