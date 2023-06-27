@@ -21,6 +21,7 @@ import { TimelineComponent } from './components/timeline/timeline.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { UpdatesComponent } from './components/updates/updates.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { CursorComponent } from './components/cursor/cursor.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +32,13 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     TimelineComponent,
     GalleryComponent,
     UpdatesComponent,
-    CarouselComponent
+    CarouselComponent,
+    CursorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgOptimizedImage,
     LucideAngularModule.pick({
       AtSignIcon,
       Instagram,
@@ -52,8 +55,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
       Aperture,
       Gamepad2,
       Coffee
-    }),
-    NgOptimizedImage
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

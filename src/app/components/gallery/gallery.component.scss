@@ -25,7 +25,7 @@
 
 .gallery > .footer {
   position: fixed;
-  right: $spacer-right;
+  right: calc($spacer-right - 1vw);
   bottom: $spacer-bottom;
 
   display: flex;
@@ -33,7 +33,7 @@
   align-items: flex-end;
   gap: 0.2rem;
 
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 
   height: fit-content;
   width: 30rem;
@@ -50,7 +50,6 @@
 
 .footer > div:first-child lucide-icon {
   color: $color-grey;
-  cursor: pointer;
 
   transition: color 0.3s ease-in-out;
 }
@@ -61,8 +60,6 @@
 
 .footer > h3 {
   font-size: 1.4rem;
-
-  cursor: help;
 }
 
 .footer > span {

@@ -1,0 +1,41 @@
+@import '../../../assets/theme/default.theme';
+
+.cursor {
+  z-index: 1000;
+  position: fixed;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+
+  background-color: $color-black;
+
+  pointer-events: none;
+  opacity: 0;
+}
+
+.cursor::after {
+  content: '';
+  position: absolute;
+  left: -0.55rem;
+  top: -0.55rem;
+
+  animation-name: cursorRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  width: 1.2rem;
+  height: 1.2rem;
+
+  border-radius: 50%;
+  border: dashed 0.2rem $color-grey;
+}
+
+@keyframes cursorRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

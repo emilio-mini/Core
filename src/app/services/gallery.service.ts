@@ -26,7 +26,9 @@ export class GalleryService {
 
   direction: 'forward' | 'backward' = 'forward';
 
-  constructor() { }
+  constructor() {
+    this.randomize();
+  }
 
   get current(): ImageData {
     return this.imageData[this.currentImage];

@@ -27,7 +27,7 @@
     <app-timeline [start]="2013" [end]="2024" [points]="[2013, 2017, 2022]" [data]="cvData"></app-timeline>
   </section>
 
-  <section *ngIf="navService.selectedIndex === 2" class="section-2">
+  <section [hidden]="navService.selectedIndex !== 2" class="section-2">
     <app-gallery></app-gallery>
   </section>
 

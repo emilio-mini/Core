@@ -1,8 +1,8 @@
 <div class="gallery">
   <p>Shot on {{galleryService.current.device}}</p>
 
-  <img #top src="../../../assets/img/compressed/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
-  <img #bottom src="../../../assets/img/compressed/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
+  <img #top loading="lazy" src="../../../assets/img/compressed/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
+  <img #bottom loading="lazy" src="../../../assets/img/compressed/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
 
   <div class="footer striped inverted">
     <div>
