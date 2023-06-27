@@ -1,47 +1,28 @@
 [
   {
-    "timestamp": "2023-06-27T16:57:32.773Z",
-    "title": "Update #3",
-    "text": "Development of <b class='highlight teal'>Spark 2.0</b> is progressing smoothly. Landing page is almost complete and close to the final look of the game",
+    "timestamp": "2023-06-27T21:49:32Z",
+    "title": "Dev Log #1",
+    "text": "Hello everyone!<br><br>This is the first update on Spark. We have been working on this project in our free time during the last few months and I have to say, things are coming along pretty great. The <b class='highlight teal'>landing page</b>, as well as the <b class='highlight blue'>join page</b> and <b class='highlight red'>lobby page</b> are nearing their final look and are already close to finished when it comes to functionality. Cards have gotten a complete design overhaul as well as <b class='highlight teal'>animations</b>. Especially for special effects cards.<br><br>You can find some <b class='highlight blue'>screenshots</b> of the development-build down below. Keep in mind that these could change a bit before the final release.<br><br>'Till next time,<br>~ emilio.mini",
     "screenshots": [
       {
-        "src": "update-1.png",
+        "src": "update-1/home-1.png",
         "alt": "Screenshot of the Spark landing page",
         "description": "Spark landing page"
       },
       {
-        "src": "update-1.png",
-        "alt": "Screenshot of the Spark landing page",
-        "description": "Spark landing page"
+        "src": "update-1/home-2.png",
+        "alt": "Screenshot of the Spark mode select page",
+        "description": "Spark mode select page"
       },
       {
-        "src": "update-1.png",
-        "alt": "Screenshot of the Spark landing page",
-        "description": "Spark landing page"
-      }
-    ]
-  },
-  {
-    "timestamp": "2023-06-27T16:57:32.773Z",
-    "title": "Update #2",
-    "text": "Development of <b class='highlight teal'>Spark 2.0</b> is progressing smoothly. Landing page is almost complete and close to the final look of the game",
-    "screenshots": [
+        "src": "update-1/join.png",
+        "alt": "Screenshot of the Spark join game page",
+        "description": "Spark join game page"
+      },
       {
-        "src": "update-1.png",
-        "alt": "Screenshot of the Spark landing page",
-        "description": "Spark landing page"
-      }
-    ]
-  },
-  {
-    "timestamp": "2023-06-27T16:57:32.773Z",
-    "title": "Update #1",
-    "text": "Development of <b class='highlight teal'>Spark 2.0</b> is progressing smoothly. Landing page is almost complete and close to the final look of the game",
-    "screenshots": [
-      {
-        "src": "update-1.png",
-        "alt": "Screenshot of the Spark landing page",
-        "description": "Spark landing page"
+        "src": "update-1/lobby.png",
+        "alt": "Screenshot of the Spark lobby page",
+        "description": "Spark lobby page"
       }
     ]
   }

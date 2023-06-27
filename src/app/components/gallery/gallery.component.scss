@@ -43,13 +43,14 @@
   gap: 0.6rem;
 }
 
-.footer > div:first-child > lucide-icon {
+.footer > div:first-child lucide-icon {
+  color: $color-grey;
   cursor: pointer;
 
   transition: color 0.3s ease-in-out;
 }
 
-.footer > div:first-child > lucide-icon:hover {
+.footer > div:first-child lucide-icon:hover {
   color: $color-teal;
 }
 

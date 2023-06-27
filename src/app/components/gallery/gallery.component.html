@@ -3,8 +3,8 @@
   <img #bottom src="../../../assets/img/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
 
   <div class="footer striped inverted">
-    <div class="functions">
-      <lucide-icon name="download"></lucide-icon>
+    <div>
+      <a download="photograph" href="../../../assets/img/{{galleryService.current.src}}"><lucide-icon name="download"></lucide-icon></a>
       <lucide-icon name="chevron-left" (click)="previous()" title="Previous image"></lucide-icon>
       <lucide-icon name="chevron-right" (click)="next()" title="Next image"></lucide-icon>
       <lucide-icon name="maximize-2"></lucide-icon>

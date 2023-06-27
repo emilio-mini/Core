@@ -8,6 +8,8 @@
 .carousel > img {
   width: 100%;
   border-radius: 1rem;
+
+  user-select: none;
 }
 
 .functions {
@@ -19,16 +21,18 @@
   margin-top: 0.5rem;
 }
 
-.functions > lucide-icon {
+.functions lucide-icon {
   cursor: pointer;
 
   transition: color 0.3s ease-in-out;
 }
 
-.functions > lucide-icon:hover {
+.functions lucide-icon:hover {
   color: $color-teal;
 }
 
 .functions > a {
+  color: $color-black;
+
   user-select: none;
 }
