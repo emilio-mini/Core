@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {NavService} from "./services/nav.service";
+import {FireService} from "./services/fire.service";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import {NavService} from "./services/nav.service";
 export class AppComponent {
 
   constructor(
-    public navService: NavService
+    public navService: NavService,
+    private fireService: FireService
   ) {
   }
 

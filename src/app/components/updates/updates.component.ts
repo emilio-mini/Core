@@ -1,13 +1,15 @@
 import {Component} from '@angular/core';
-import updateJSON from '../../../assets/json/updates.json';
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";
+import {FireService} from "../../services/fire.service";
+import firebase from "firebase/compat";
+import Timestamp = firebase.firestore.Timestamp;
 
 export type UpdateData = {
-  timestamp: string;
+  timestamp: Timestamp;
   title: string;
   text: string;
-  screenshots: ScreenshotData[];
+  screenshots?: ScreenshotData[];
 }
 
 export type ScreenshotData = {
@@ -23,14 +25,19 @@ export type ScreenshotData = {
 })
 export class UpdatesComponent {
 
-  updates: UpdateData[] = updateJSON;
+  updates: UpdateData[] = [];
 
-  constructor() {
+  constructor(
+    private fireService: FireService
+  ) {
     dayjs.extend(advancedFormat);
+
+    fireService.getUpdates()
+      .then(updates => this.updates = updates);
   }
 
-  format(date: string, format: string): string {
-    return dayjs(date).format(format);
+  format(date: Timestamp, format: string): string {
+    return dayjs(date.toDate()).format(format);
   }
 
 }

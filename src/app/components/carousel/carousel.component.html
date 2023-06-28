@@ -1,13 +1,13 @@
 <div class="carousel">
-  <img [alt]="images[selectedIndex].alt" draggable="false" src="{{pathPrefix}}{{images[selectedIndex].src}}">
+  <img [alt]="images[selectedIndex].alt" draggable="false" [src]="selectedPath">
   <div class="functions">
     <lucide-icon (click)="previous()" *ngIf="images.length > 1" name="chevron-left"
                  title="Previous screenshot"></lucide-icon>
-    <a download="spark-dev-screenshot" href="{{pathPrefix}}{{images[selectedIndex].src}}" title="Download screenshot">
+    <a title="Download screenshot" (click)="download()">
       <lucide-icon name="download"></lucide-icon>
     </a>
     <a *ngIf="images.length > 1">{{selectedIndex + 1}} / {{images.length}}</a>
-    <a href="{{pathPrefix}}{{images[selectedIndex].src}}" target="_blank" title="Open screenshot in new tab">
+    <a [href]="selectedPath" target="_blank" title="Open screenshot in new tab">
       <lucide-icon name="maximize-2"></lucide-icon>
     </a>
     <lucide-icon (click)="next()" *ngIf="images.length > 1" name="chevron-right" title="Next screenshot"></lucide-icon>

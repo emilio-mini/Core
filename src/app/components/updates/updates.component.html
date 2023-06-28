@@ -4,6 +4,6 @@
       title="Last updated {{format(update.timestamp, 'Do MMMM YYYY [at] HH:mm:ss [UTC]Z')}}">{{format(update.timestamp, 'Do MMM YYYY')}}</a>
     <h3>{{update.title}}</h3>
     <p [innerHTML]="update.text"></p>
-    <app-carousel [images]="update.screenshots" pathPrefix="../../../assets/img/"></app-carousel>
+    <app-carousel *ngIf="update.screenshots ? update.screenshots.length > 0 : false" [images]="update.screenshots!" pathPrefix="spark-updates/"></app-carousel>
   </div>
 </div>

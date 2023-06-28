@@ -20,6 +20,9 @@ export class NavService {
     private router: Router
   ) {
     this.selectedIndex = this.paths.findIndex(value => window.location.href.endsWith(value));
+    if (this.selectedIndex === -1) {
+      this.selectedIndex = 0;
+    }
   }
 
   get currentInverted(): boolean {
