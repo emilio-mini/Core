@@ -102,6 +102,16 @@
     display: none;
   }
 
+  .title.inverted > a {
+    display: block;
+    top: -3.4rem;
+    left: -1.2rem;
+  }
+
+  .title.inverted {
+    margin-bottom: 4rem;
+  }
+
 }
 
 @media only screen and (max-width: 350px) {
