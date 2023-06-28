@@ -71,3 +71,28 @@
   background-color: $color-grey;
   border-radius: 0.2rem;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .gallery > .footer {
+    left: $spacer-small-left;
+    right: $spacer-small-right;
+    bottom: $spacer-small-bottom;
+
+    width: auto;
+  }
+
+  .footer > h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer > span {
+    height: 0.3rem;
+    border-radius: 0.15rem;
+  }
+
+  .footer > div {
+    font-size: 0.9rem;
+  }
+
+}

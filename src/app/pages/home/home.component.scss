@@ -151,6 +151,14 @@
 
 @media only screen and (max-width: 1100px) {
 
+  .home {
+    padding-top: $spacer-small-top;
+  }
+
+  .home > .striped.nav {
+    height: 11rem;
+  }
+
   .home > p {
     width: 100%;
     padding-right: $spacer-small-right;
