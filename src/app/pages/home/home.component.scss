@@ -113,23 +113,6 @@
 
 }
 
-@media only screen and (min-aspect-ratio: 2/1) {
-
-  .home > p {
-    width: 60vw !important;
-  }
-
-  .section-0 > .icons {
-    position: fixed;
-    top: 1rem;
-    left: 50% !important;
-
-    width: fit-content;
-    transform: translate(-50%, 0);
-  }
-
-}
-
 @media only screen and (max-width: 1450px) {
 
   .home {
@@ -199,3 +182,20 @@
   }
 
 }
+
+/*@media (max-aspect-ratio: 2/1) {
+
+  .home > p {
+    width: 60vw !important;
+  }
+
+  .section-0 > .icons {
+    position: fixed;
+    top: 1rem;
+    left: 50% !important;
+
+    width: fit-content;
+    transform: translate(-50%, 0);
+  }
+
+}*/

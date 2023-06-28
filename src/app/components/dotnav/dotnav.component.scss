@@ -1,6 +1,7 @@
 @import '../../../assets/theme/default.theme';
 
 .dotnav {
+  z-index: 100;
   position: fixed;
   top: $spacer-top;
   right: $spacer-right;
