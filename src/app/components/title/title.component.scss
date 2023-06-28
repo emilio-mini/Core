@@ -69,3 +69,54 @@
 .title.inverted > h1 {
   color: $color-grey;
 }
+
+@media only screen and (max-width: 680px), only screen and (max-height: 680px) {
+
+  .title > a {
+    left: 4.5rem;
+    top: -4.5rem;
+
+    font-size: 25rem;
+  }
+
+  .title > h1 {
+    font-size: 3rem;
+  }
+
+  .title > h2 {
+    height: 8rem;
+    width: 8rem;
+
+    margin-left: 0;
+
+    line-height: 8rem;
+
+    font-size: 4.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .title > a {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  .title > h1 {
+    font-size: 2rem;
+  }
+
+  .title > h2 {
+    height: 6rem;
+    width: 6rem;
+
+    line-height: 6rem;
+
+    font-size: 3.5rem;
+  }
+
+}

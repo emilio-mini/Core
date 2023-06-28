@@ -7,6 +7,7 @@
   <p [class.inverted]="navService.current.inverted" [innerHTML]="navService.current.content"></p>
 
   <section *ngIf="navService.selectedIndex === 0" class="section-0">
+
     <img alt="It's a picture of me :)" draggable="false" src="../../assets/img/about.png"/>
     <span class="striped img" [class.inverted]="navService.current.inverted"></span>
 
@@ -32,6 +33,7 @@
   </section>
 
   <section *ngIf="navService.selectedIndex === 3" class="section-3">
+    <p>View this page on desktop to <b class="highlight teal">see updates</b>!</p>
     <div>
       <button title="This button opens the game in a new tab" (click)="playClick()">
         <lucide-icon name="gamepad-2"></lucide-icon>

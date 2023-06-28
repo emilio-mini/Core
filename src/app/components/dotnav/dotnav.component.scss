@@ -36,3 +36,11 @@
 
   background-color: $color-teal;
 }
+
+@media only screen and (max-width: 1450px) {
+
+  .dotnav {
+    right: $spacer-small-right;
+  }
+
+}

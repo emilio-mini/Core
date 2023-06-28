@@ -37,21 +37,31 @@ export class TimelineComponent implements AfterViewInit {
   }
 
   calculatePoints(): void {
-    this.today.nativeElement.style.left = this.getLeft(this.currentYear) - this.today.nativeElement.offsetWidth + 'px';
+    if (!this.timelineHorizontal) {
+      this.today.nativeElement.style.left = this.getLeft(this.currentYear) - this.today.nativeElement.offsetWidth + 'px';
+    }
 
     this.pointDivs.forEach((element, index) => {
-      element.nativeElement.style.left = this.getLeft(this.points[index]) - element.nativeElement.offsetWidth + 'px';
+      if (!this.timelineHorizontal) {
+        element.nativeElement.style.left = this.getLeft(this.points[index]) - element.nativeElement.offsetWidth + 'px';
+      }
     });
 
     this.dataDivs.forEach((element, index) => {
-      const start = this.getLeft(this.data[index].start);
-      element.nativeElement.style.left = start + 'px';
-      element.nativeElement.style.width = (this.getLeft(this.data[index].end) - start) - 20 + 'px';
+      if (!this.timelineHorizontal) {
+        const start = this.getLeft(this.data[index].start);
+        element.nativeElement.style.left = start + 'px';
+        element.nativeElement.style.width = (this.getLeft(this.data[index].end) - start) - 20 + 'px';
+      }
     });
   }
 
   getLeft(point: number): number {
     return (((point - this.start) / (this.end - this.start)) * (this.timeline.nativeElement.offsetWidth - 100)) + 50;
+  }
+
+  get timelineHorizontal(): boolean {
+    return this.timeline.nativeElement.offsetWidth < this.timeline.nativeElement.offsetHeight;
   }
 
 }
