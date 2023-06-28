@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { CursorComponent } from './cursor.component';
+import {CursorComponent} from './cursor.component';
 
 describe('CursorComponent', () => {
   let component: CursorComponent;

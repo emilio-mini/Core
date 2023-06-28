@@ -1,51 +1,26 @@
-<div class="home">
+<section>
+  <app-title [index]="1" header="About me"></app-title>
+  <p>
+    Hi! My name is <b class="highlight teal">Emilio Miniberger</b>. I am a <b class="highlight blue">front-end
+    developer</b> and <b class="highlight red">paramedic</b>. I attended a Higher Federal Technical
+    College of Computer Sciences and Informatics in Austria, where I graduated in 2022 with a Matura Degree.
+    <br><br>
+    I started working as a paramedic in 2022 and have gathered over 1.800 hours of experience since.
+  </p>
 
-  <app-dotnav></app-dotnav>
-  <span class="striped nav" [class.inverted]="navService.current.inverted"></span>
+  <img alt="It's a picture of me :)" draggable="false" src="../../assets/img/about.png"/>
+  <span class="striped img"></span>
 
-  <app-title [header]="navService.current.header" [index]="navService.selectedIndex + 1" [inverted]="navService.current.inverted"></app-title>
-  <p [class.inverted]="navService.current.inverted" [innerHTML]="navService.current.content"></p>
+  <div class="icons">
+    <a class="teal" href="mailto:business@emilio-mini.me">
+      <lucide-icon name="at-sign-icon" size="40" title="Send me a mail!"></lucide-icon>
+    </a>
+    <a class="blue" href="https://linkedin.com/in/emilio-mini">
+      <lucide-icon name="linkedin" size="40" title="LinkedIn"></lucide-icon>
+    </a>
+    <a class="red" href="https://www.instagram.com/emilio.mini/">
+      <lucide-icon name="instagram" size="40" title="Instagram"></lucide-icon>
+    </a>
+  </div>
 
-  <section *ngIf="navService.selectedIndex === 0" class="section-0">
-
-    <img alt="It's a picture of me :)" draggable="false" src="../../assets/img/about.png"/>
-    <span class="striped img" [class.inverted]="navService.current.inverted"></span>
-
-    <div class="icons">
-      <a class="teal" href="mailto:business@emilio-mini.me">
-        <lucide-icon name="at-sign-icon" size="40" title="Send me a mail!"></lucide-icon>
-      </a>
-      <a class="blue" href="https://linkedin.com/in/emilio-mini">
-        <lucide-icon name="linkedin" size="40" title="LinkedIn"></lucide-icon>
-      </a>
-      <a class="red" href="https://www.instagram.com/emilio.mini/">
-        <lucide-icon name="instagram" size="40" title="Instagram"></lucide-icon>
-      </a>
-    </div>
-  </section>
-
-  <section *ngIf="navService.selectedIndex === 1" class="section-1">
-    <app-timeline [start]="2013" [end]="2024" [points]="[2013, 2017, 2022]" [data]="cvData"></app-timeline>
-  </section>
-
-  <section [hidden]="navService.selectedIndex !== 2" class="section-2">
-    <app-gallery></app-gallery>
-  </section>
-
-  <section *ngIf="navService.selectedIndex === 3" class="section-3">
-    <p>View this page on desktop to <b class="highlight teal">see updates</b>!</p>
-    <div>
-      <button title="This button opens the game in a new tab" (click)="playClick()">
-        <lucide-icon name="gamepad-2"></lucide-icon>
-        <a>Play now</a>
-      </button>
-      <button class="outlined" title="Sparky longs for some hot chocolate ʕ•ᴥ•ʔ" (click)="chocolateClick()">
-        <lucide-icon name="coffee"></lucide-icon>
-        <a>Donate</a>
-      </button>
-    </div>
-
-    <app-updates></app-updates>
-  </section>
-
-</div>
+</section>

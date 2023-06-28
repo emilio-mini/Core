@@ -1,10 +1,11 @@
-<div #timeline class="timeline" (window:resize)="calculatePoints()">
+<div #timeline (window:resize)="calculatePoints()" class="timeline">
   <div #points *ngFor="let point of points" class="timestamp">{{point}}</div>
 
-  <div #datasets *ngFor="let dataset of data" class="dataset {{dataset.color}}" [title]="dataset.title">
+  <div #datasets *ngFor="let dataset of data" [title]="dataset.title" class="dataset {{dataset.color}}">
     <h3>{{dataset.title}}</h3>
     <div>
-      <a *ngFor="let link of dataset.links" [class.clickable]="link.target" [href]="link.target ?? ''" [title]="link.tooltip ? (link.text ? link.tooltip + ': ' + link.text : link.tooltip): ''">
+      <a *ngFor="let link of dataset.links" [class.clickable]="link.target" [href]="link.target ?? ''"
+         [title]="link.tooltip ? (link.text ? link.tooltip + ': ' + link.text : link.tooltip): ''">
         <lucide-icon [name]="link.icon"></lucide-icon>
         <span *ngIf="link.text">{{link.text}}</span>
       </a>

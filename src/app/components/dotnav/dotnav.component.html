@@ -1,5 +1,5 @@
-<div class="dotnav" [class.inverted]="navService.current.inverted">
-  <span *ngFor="let dot of [].constructor(navService.pageCount); let i = index"
-        [class.active]="i === navService.selectedIndex"
-        (click)="navService.selectIndex(i)"></span>
+<div [class.inverted]="navService.currentInverted" class="dotnav">
+  <span (click)="navService.selectIndex(i)"
+        *ngFor="let dot of [].constructor(navService.pageCount); let i = index"
+        [class.active]="i === navService.selectedIndex"></span>
 </div>

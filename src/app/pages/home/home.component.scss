@@ -13,28 +13,7 @@
   width: 100vw;
 }
 
-.home > .striped.nav {
-  position: fixed;
-  top: calc($spacer-top - 4vh);
-  right: calc($spacer-right - 1vw);
-
-  width: 8rem;
-  height: 14rem;
-}
-
-.home > p {
-  margin-top: 1rem;
-
-  line-height: 1.7rem;
-
-  transition: color 0.3s ease-in-out;
-}
-
-.home > p.inverted {
-  color: $color-grey
-}
-
-.section-0 > img {
+img {
   z-index: -10;
   position: fixed;
   bottom: $spacer-bottom;
@@ -46,7 +25,7 @@
   user-select: none;
 }
 
-.section-0 > .striped.img {
+.striped.img {
   z-index: -20;
   position: fixed;
   bottom: calc($spacer-bottom + 2rem);
@@ -58,7 +37,7 @@
   aspect-ratio: 15/10;
 }
 
-.section-0 > .icons {
+.icons {
   position: fixed;
   bottom: $spacer-bottom;
   left: $spacer-left;
@@ -66,19 +45,6 @@
   display: flex;
   flex-direction: row;
   gap: 1.2rem;
-}
-
-.section-3 > p {
-  display: none;
-  margin-top: 1.5rem;
-}
-
-.section-3 > div {
-  margin-top: 2rem;
-
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
 }
 
 .icons > a {
@@ -101,12 +67,12 @@
 
 @media only screen and (max-aspect-ratio: 1.8/1) {
 
-  .section-0 > img {
+  img {
     height: auto;
     width: 41.5vw;
   }
 
-  .section-0 > .striped.img {
+  .striped.img {
     height: auto;
     width: 31.5vw;
   }
@@ -115,86 +81,33 @@
 
 @media only screen and (max-width: 1450px) {
 
-  .home {
-    padding-left: $spacer-small-left;
-  }
-
-  .section-0 > .icons {
+  .icons {
     left: $spacer-small-left;
   }
 
-  .home > .striped.nav {
-    right: calc($spacer-small-right - 1vw);
-  }
-
-  .home > p {
+  p {
     width: 45vw;
   }
 
-  .section-0 > img {
+  img {
     right: calc($spacer-small-right - 4vw);
   }
 
-  .section-0 > .striped.img {
+  .striped.img {
     right: $spacer-small-right;
-  }
-
-  .section-3 > app-updates {
-    display: none;
-  }
-
-  .section-3 > p {
-    display: block;
   }
 
 }
 
 @media only screen and (max-width: 1100px) {
 
-  .home {
-    padding-top: $spacer-small-top;
-  }
-
-  .home > .striped.nav {
-    height: 11rem;
-  }
-
-  .home > p {
+  p {
     width: 100%;
     padding-right: $spacer-small-right;
   }
 
-  .section-0 > img, .section-0 > .striped.img {
+  img, .striped.img {
     display: none;
-  }
-
-}
-
-@media only screen and (max-width: 680px), only screen and (max-height: 680px) {
-
-  .home > .striped.nav {
-    width: 5rem;
-  }
-
-  .home > p, .section-3 > p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-}
-
-@media only screen and (max-width: 480px) {
-
-  .home > p.inverted {
-    color: $color-black;
-  }
-
-}
-
-@media only screen and (max-height: 750px) {
-
-  .home {
-    padding-top: calc($spacer-top * 1.2);
   }
 
 }

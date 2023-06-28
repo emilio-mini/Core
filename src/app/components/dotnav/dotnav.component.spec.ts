@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DotnavComponent } from './dotnav.component';
+import {DotnavComponent} from './dotnav.component';
 
 describe('DotnavComponent', () => {
   let component: DotnavComponent;
@@ -8,9 +8,9 @@ describe('DotnavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DotnavComponent ]
+      declarations: [DotnavComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DotnavComponent);
     component = fixture.componentInstance;

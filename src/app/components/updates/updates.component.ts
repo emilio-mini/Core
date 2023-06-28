@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import updateJSON from '../../../assets/json/updates.json';
 import dayjs from "dayjs";
 import advancedFormat from "dayjs/plugin/advancedFormat";

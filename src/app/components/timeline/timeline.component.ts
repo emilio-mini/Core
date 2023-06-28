@@ -32,6 +32,10 @@ export class TimelineComponent implements AfterViewInit {
 
   readonly currentYear = new Date().getFullYear();
 
+  get timelineHorizontal(): boolean {
+    return this.timeline.nativeElement.offsetWidth < this.timeline.nativeElement.offsetHeight;
+  }
+
   ngAfterViewInit(): void {
     this.calculatePoints();
   }
@@ -58,10 +62,6 @@ export class TimelineComponent implements AfterViewInit {
 
   getLeft(point: number): number {
     return (((point - this.start) / (this.end - this.start)) * (this.timeline.nativeElement.offsetWidth - 100)) + 50;
-  }
-
-  get timelineHorizontal(): boolean {
-    return this.timeline.nativeElement.offsetWidth < this.timeline.nativeElement.offsetHeight;
   }
 
 }

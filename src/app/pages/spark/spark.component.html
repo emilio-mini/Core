@@ -1,0 +1,26 @@
+<section>
+
+  <app-title [index]="4" header="Spark"></app-title>
+  <p>
+    Spark is an <b class="highlight teal">online</b>, <b class="highlight blue">multiplayer</b> card game, <b
+    class="highlight red">developed by me</b> and a friend of mine, running right in your favourite browser.
+    <br><br>
+    It started off as a school project back in the day before I decided to rewrite it from scratch.
+    You can play the old version now or wait a while longer while I get the new version ready for release!
+  </p>
+  <p class="small-notice">View this page on desktop to <b class="highlight teal">see updates</b>!</p>
+
+  <div>
+    <button (click)="playClick()" title="This button opens the game in a new tab">
+      <lucide-icon name="gamepad-2"></lucide-icon>
+      <a>Play now</a>
+    </button>
+    <button (click)="chocolateClick()" class="outlined" title="Sparky longs for some hot chocolate ʕ•ᴥ•ʔ">
+      <lucide-icon name="coffee"></lucide-icon>
+      <a>Donate</a>
+    </button>
+  </div>
+
+  <app-updates></app-updates>
+
+</section>

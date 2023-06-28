@@ -1,6 +1,6 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
 
-import { CursorService } from './cursor.service';
+import {CursorService} from './cursor.service';
 
 describe('CursorService', () => {
   let service: CursorService;

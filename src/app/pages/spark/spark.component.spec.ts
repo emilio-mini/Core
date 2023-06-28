@@ -1,16 +1,16 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {CarouselComponent} from './carousel.component';
+import {SparkComponent} from './spark.component';
 
-describe('CarouselComponent', () => {
-  let component: CarouselComponent;
-  let fixture: ComponentFixture<CarouselComponent>;
+describe('SparkComponent', () => {
+  let component: SparkComponent;
+  let fixture: ComponentFixture<SparkComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CarouselComponent]
+      declarations: [SparkComponent]
     });
-    fixture = TestBed.createComponent(CarouselComponent);
+    fixture = TestBed.createComponent(SparkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

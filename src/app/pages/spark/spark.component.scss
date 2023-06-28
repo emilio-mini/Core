@@ -1,0 +1,25 @@
+
+p.small-notice {
+  display: none;
+  margin-top: 1.5rem;
+}
+
+section > div {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 1450px) {
+
+  app-updates {
+    display: none;
+  }
+
+  p.small-notice {
+    display: block;
+  }
+
+}

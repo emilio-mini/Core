@@ -1,15 +1,24 @@
 <div class="gallery">
   <p>Shot on {{galleryService.current.device}}</p>
 
-  <img #top loading="lazy" src="../../../assets/img/compressed/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
-  <img #bottom loading="lazy" src="../../../assets/img/compressed/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
+  <img #top loading="lazy"
+       src="../../../assets/img/compressed/{{topIsTop ? galleryService.current.src : galleryService.future.src}}">
+  <img #bottom loading="lazy"
+       src="../../../assets/img/compressed/{{topIsTop ? galleryService.future.src : galleryService.current.src}}">
 
   <div class="footer striped inverted">
     <div>
-      <a title="Click to download original image ({{galleryService.current.originalResolution}})" download="{{galleryService.current.location}}" href="../../../assets/img/original/{{galleryService.current.download}}"><lucide-icon name="download"></lucide-icon></a>
-      <lucide-icon name="chevron-left" (click)="previous()" title="Previous image"></lucide-icon>
-      <lucide-icon name="chevron-right" (click)="next()" title="Next image"></lucide-icon>
-      <a title="Open original image in new tab" href="../../../assets/img/original/{{galleryService.current.download}}" target="_blank"><lucide-icon name="maximize-2"></lucide-icon></a>
+      <a download="{{galleryService.current.location}}"
+         href="../../../assets/img/original/{{galleryService.current.download}}"
+         title="Click to download original image ({{galleryService.current.originalResolution}})">
+        <lucide-icon name="download"></lucide-icon>
+      </a>
+      <lucide-icon (click)="previous()" name="chevron-left" title="Previous image"></lucide-icon>
+      <lucide-icon (click)="next()" name="chevron-right" title="Next image"></lucide-icon>
+      <a href="../../../assets/img/original/{{galleryService.current.download}}" target="_blank"
+         title="Open original image in new tab">
+        <lucide-icon name="maximize-2"></lucide-icon>
+      </a>
     </div>
     <h3 [title]="galleryService.current.coordinates">{{galleryService.current.location}}</h3>
     <span></span>

@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 export type MouseState = 'default' | 'click';
 
@@ -9,7 +9,8 @@ export class CursorService {
 
   mouseState: MouseState = 'default';
 
-  constructor() { }
+  constructor() {
+  }
 
   mouseEnter(state: MouseState): void {
     this.mouseState = state;
