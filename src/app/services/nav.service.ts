@@ -26,7 +26,7 @@ export class NavService {
   }
 
   get currentInverted(): boolean {
-    return this.selectedIndex === 2;
+    return false;
   }
 
   navigateByIndex(index: number): void {

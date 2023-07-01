@@ -33,6 +33,7 @@ import {CursorComponent} from './components/cursor/cursor.component';
 import {CvComponent} from './pages/cv/cv.component';
 import {PhotographyComponent} from './pages/photography/photography.component';
 import {SparkComponent} from './pages/spark/spark.component';
+import { PhotoComponent } from './components/photo/photo.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {SparkComponent} from './pages/spark/spark.component';
     CursorComponent,
     CvComponent,
     PhotographyComponent,
-    SparkComponent
+    SparkComponent,
+    PhotoComponent
   ],
   imports: [
     BrowserModule,

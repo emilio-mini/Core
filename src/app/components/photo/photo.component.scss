@@ -1,0 +1,16 @@
+@import '../../../assets/theme/default.theme';
+
+.photo {
+  position: relative;
+
+  width: 20rem;
+  aspect-ratio: 85/64;
+
+  border-radius: 1.5rem;
+
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}

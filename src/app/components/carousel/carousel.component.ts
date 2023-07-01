@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, Input} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/core';
 import {ScreenshotData} from "../updates/updates.component";
 import {FireService} from "../../services/fire.service";
 
@@ -11,6 +11,8 @@ export class CarouselComponent implements AfterViewInit {
 
   @Input() pathPrefix: string = '/';
   @Input() images: ScreenshotData[] = [];
+
+  @ViewChild('loader') loader!: ElementRef;
 
   selectedIndex = 0;
   selectedPath: string | undefined = undefined;
@@ -27,6 +29,7 @@ export class CarouselComponent implements AfterViewInit {
   updateImageUrl(): void {
     this.fireService.getImageUrl(this.pathPrefix + this.images[this.selectedIndex].src).then(url => {
       this.selectedPath = url;
+      this.loader.nativeElement.style.opacity = 0;
     });
   }
 
@@ -56,4 +59,5 @@ export class CarouselComponent implements AfterViewInit {
     this.fireService.promptDownload(this.selectedPath);
   }
 
+  protected readonly undefined = undefined;
 }

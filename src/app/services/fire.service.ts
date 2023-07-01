@@ -3,6 +3,7 @@ import { initializeApp, FirebaseOptions } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 import { getStorage, getDownloadURL, ref } from "firebase/storage";
 import {UpdateData} from "../components/updates/updates.component";
+import {PhotoData} from "../pages/photography/photography.component";
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,7 @@ export class FireService {
   readonly storage;
 
   readonly updatesCollection;
+  readonly galleryCollection;
 
   constructor() {
       this.app = initializeApp(this.config);
@@ -30,7 +32,14 @@ export class FireService {
       this.storage = getStorage(this.app);
 
       this.updatesCollection = collection(this.db, 'spark-updates');
-      this.getUpdates();
+      this.galleryCollection = collection(this.db, 'gallery');
+  }
+
+  async getGallery(): Promise<PhotoData[]> {
+    const query = await getDocs(this.galleryCollection);
+    return query.docs
+      .map(doc => doc.data())
+      .map(data => data as PhotoData);
   }
 
   async getUpdates(): Promise<UpdateData[]> {

@@ -1,6 +1,11 @@
 <section>
 
-  <app-title [index]="3" [inverted]="true" header="Photography"></app-title>
-  <app-gallery></app-gallery>
+  <app-title [index]="3" header="Photography"></app-title>
+
+  <div class="gallery">
+
+    <app-photo *ngFor="let photo of photoData | async" [data]="photo"></app-photo>
+
+  </div>
 
 </section>

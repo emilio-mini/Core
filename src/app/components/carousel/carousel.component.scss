@@ -5,11 +5,19 @@
   width: 30rem;
 }
 
-.carousel > img {
+.carousel > .image {
+  position: relative;
   width: 100%;
+  aspect-ratio: 2/1;
   border-radius: 1rem;
 
   user-select: none;
+
+  overflow: hidden;
+}
+
+.image > img {
+  width: 100%;
 }
 
 .functions {
