@@ -16,6 +16,7 @@ export class CarouselComponent implements AfterViewInit {
 
   selectedIndex = 0;
   selectedPath: string | undefined = undefined;
+  protected readonly undefined = undefined;
 
   constructor(
     private fireService: FireService
@@ -58,6 +59,4 @@ export class CarouselComponent implements AfterViewInit {
 
     this.fireService.promptDownload(this.selectedPath);
   }
-
-  protected readonly undefined = undefined;
 }

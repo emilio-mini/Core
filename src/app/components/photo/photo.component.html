@@ -2,7 +2,7 @@
 
   <span #loader class="loader"></span>
 
-  <img [src]="src" [alt]="data.location">
+  <img [alt]="data.location" [src]="src">
 
   <div class="details">
 
@@ -10,19 +10,20 @@
     <span></span>
 
     <div class="hover">
-      <lucide-icon name="map-pin" class="icon-small"></lucide-icon>
-      <a target="_blank" href="https://www.openstreetmap.org/#map=16/{{data.coordinates.latitude}}/{{data.coordinates.longitude}}">
+      <lucide-icon class="icon-small" name="map-pin"></lucide-icon>
+      <a href="https://www.openstreetmap.org/#map=16/{{data.coordinates.latitude}}/{{data.coordinates.longitude}}"
+         target="_blank">
         {{degrees}}
       </a>
     </div>
 
     <div>
-      <lucide-icon name="camera" class="icon-small"></lucide-icon>
+      <lucide-icon class="icon-small" name="camera"></lucide-icon>
       <a>{{data.device}}</a>
     </div>
 
     <div>
-      <lucide-icon name="aperture" class="icon-small"></lucide-icon>
+      <lucide-icon class="icon-small" name="aperture"></lucide-icon>
       <a>ƒ/{{data.aperture}}</a>
       <a>{{data.shutterSpeed}}</a>
       <a>{{data.focalLength}}mm</a>
@@ -31,11 +32,11 @@
 
     <div class="functions">
       <button (click)="onDownloadClick()">
-        <lucide-icon name="download" class="icon-small"></lucide-icon>
+        <lucide-icon class="icon-small" name="download"></lucide-icon>
         <a>Original</a>
       </button>
-      <button class="outlined" (click)="onDownloadPreviewClick()">
-        <lucide-icon name="download" class="icon-small"></lucide-icon>
+      <button (click)="onDownloadPreviewClick()" class="outlined">
+        <lucide-icon class="icon-small" name="download"></lucide-icon>
         <a>Preview</a>
       </button>
     </div>

@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { initializeApp, FirebaseOptions } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore";
-import { getStorage, getDownloadURL, ref } from "firebase/storage";
+import {Injectable} from '@angular/core';
+import {FirebaseOptions, initializeApp} from "firebase/app";
+import {collection, getDocs, getFirestore} from "firebase/firestore";
+import {getDownloadURL, getStorage, ref} from "firebase/storage";
 import {UpdateData} from "../components/updates/updates.component";
 import {PhotoData} from "../pages/photography/photography.component";
 
@@ -27,12 +27,12 @@ export class FireService {
   readonly galleryCollection;
 
   constructor() {
-      this.app = initializeApp(this.config);
-      this.db = getFirestore(this.app);
-      this.storage = getStorage(this.app);
+    this.app = initializeApp(this.config);
+    this.db = getFirestore(this.app);
+    this.storage = getStorage(this.app);
 
-      this.updatesCollection = collection(this.db, 'spark-updates');
-      this.galleryCollection = collection(this.db, 'gallery');
+    this.updatesCollection = collection(this.db, 'spark-updates');
+    this.galleryCollection = collection(this.db, 'gallery');
   }
 
   async getGallery(): Promise<PhotoData[]> {
@@ -60,7 +60,7 @@ export class FireService {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
     xhr.responseType = 'blob';
-    xhr.onload = function(){
+    xhr.onload = function () {
       const urlCreator = window.URL || window.webkitURL;
       const imageUrl = urlCreator.createObjectURL(this.response);
       const tag = document.createElement('a');

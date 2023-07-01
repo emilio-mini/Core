@@ -2,13 +2,13 @@
 
   <div class="image">
     <span #loader class="loader"></span>
-    <img [alt]="images[selectedIndex].alt" draggable="false" [src]="selectedPath">
+    <img [alt]="images[selectedIndex].alt" [src]="selectedPath" draggable="false">
   </div>
 
   <div class="functions">
     <lucide-icon (click)="previous()" *ngIf="images.length > 1" name="chevron-left"
                  title="Previous screenshot"></lucide-icon>
-    <a title="Download screenshot" (click)="download()">
+    <a (click)="download()" title="Download screenshot">
       <lucide-icon name="download"></lucide-icon>
     </a>
     <a *ngIf="images.length > 1">{{selectedIndex + 1}} / {{images.length}}</a>

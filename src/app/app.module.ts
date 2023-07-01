@@ -8,10 +8,12 @@ import {DotnavComponent} from './components/dotnav/dotnav.component';
 import {TitleComponent} from './components/title/title.component';
 import {
   Aperture,
-  AtSignIcon, Camera,
+  AtSignIcon,
+  Camera,
   ChevronLeft,
   ChevronRight,
-  Coffee, Copyright,
+  Coffee,
+  Copyright,
   Download,
   Gamepad2,
   GraduationCap,
@@ -26,14 +28,13 @@ import {
 } from "lucide-angular";
 import {NgOptimizedImage} from "@angular/common";
 import {TimelineComponent} from './components/timeline/timeline.component';
-import {GalleryComponent} from './components/gallery/gallery.component';
 import {UpdatesComponent} from './components/updates/updates.component';
 import {CarouselComponent} from './components/carousel/carousel.component';
 import {CursorComponent} from './components/cursor/cursor.component';
 import {CvComponent} from './pages/cv/cv.component';
 import {PhotographyComponent} from './pages/photography/photography.component';
 import {SparkComponent} from './pages/spark/spark.component';
-import { PhotoComponent } from './components/photo/photo.component';
+import {PhotoComponent} from './components/photo/photo.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,6 @@ import { PhotoComponent } from './components/photo/photo.component';
     DotnavComponent,
     TitleComponent,
     TimelineComponent,
-    GalleryComponent,
     UpdatesComponent,
     CarouselComponent,
     CursorComponent,

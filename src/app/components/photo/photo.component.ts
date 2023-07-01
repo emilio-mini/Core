@@ -1,7 +1,6 @@
 import {AfterViewInit, Component, ElementRef, Input, ViewChild} from '@angular/core';
 import {PhotoData} from "../../pages/photography/photography.component";
 import {FireService} from "../../services/fire.service";
-import {View} from "lucide-angular";
 
 @Component({
   selector: 'app-photo',
@@ -31,7 +30,7 @@ export class PhotoComponent implements AfterViewInit {
     const lonM = Math.trunc(60 * Math.abs(this.data.coordinates.longitude - lonD));
     const lonS = Math.trunc(3600 * Math.abs(this.data.coordinates.longitude - lonD) - 60 * lonM);
 
-    let lat= latD + '°' + latM + '\'' + latS + '"';
+    let lat = latD + '°' + latM + '\'' + latS + '"';
     lat += this.data.coordinates.latitude > 0 ? 'N' : 'S';
 
     let lon = lonD + '°' + lonM + '\'' + lonS + '"';
