@@ -23,6 +23,10 @@
 
   transform: rotate(90deg);
   transform-origin: left;
+
+  user-select: none;
+
+  z-index: -10;
 }
 
 .dotnav > span {
