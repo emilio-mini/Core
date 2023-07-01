@@ -12,6 +12,19 @@
   gap: 1.2rem;
 }
 
+.dotnav > a {
+  position: absolute;
+  right: -14rem;
+  top: -1.5rem;
+
+  font-weight: 900;
+  font-size: 4rem;
+  color: $color-grey;
+
+  transform: rotate(90deg);
+  transform-origin: left;
+}
+
 .dotnav > span {
   display: block;
   width: 1.2rem;

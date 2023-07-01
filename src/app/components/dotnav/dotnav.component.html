@@ -1,4 +1,6 @@
 <div [class.inverted]="navService.currentInverted" class="dotnav">
+  <a>MENU</a>
+
   <span (click)="navService.selectIndex(i)"
         *ngFor="let dot of [].constructor(navService.pageCount); let i = index"
         [class.active]="i === navService.selectedIndex"></span>
