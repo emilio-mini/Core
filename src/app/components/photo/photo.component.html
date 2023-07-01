@@ -4,4 +4,42 @@
 
   <img [src]="src" [alt]="data.location">
 
+  <div class="details">
+
+    <h3>{{data.location}}</h3>
+    <span></span>
+
+    <div class="hover">
+      <lucide-icon name="map-pin" class="icon-small"></lucide-icon>
+      <a target="_blank" href="https://www.openstreetmap.org/#map=16/{{data.coordinates.latitude}}/{{data.coordinates.longitude}}">
+        {{degrees}}
+      </a>
+    </div>
+
+    <div>
+      <lucide-icon name="camera" class="icon-small"></lucide-icon>
+      <a>{{data.device}}</a>
+    </div>
+
+    <div>
+      <lucide-icon name="aperture" class="icon-small"></lucide-icon>
+      <a>ƒ/{{data.aperture}}</a>
+      <a>{{data.shutterSpeed}}</a>
+      <a>{{data.focalLength}}mm</a>
+      <a>ISO{{data.iso}}</a>
+    </div>
+
+    <div class="functions">
+      <button (click)="onDownloadClick()">
+        <lucide-icon name="download" class="icon-small"></lucide-icon>
+        <a>Original</a>
+      </button>
+      <button class="outlined" (click)="onDownloadPreviewClick()">
+        <lucide-icon name="download" class="icon-small"></lucide-icon>
+        <a>Preview</a>
+      </button>
+    </div>
+
+  </div>
+
 </div>

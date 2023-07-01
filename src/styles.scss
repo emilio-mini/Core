@@ -54,6 +54,11 @@ p.inverted {
   color: $color-grey
 }
 
+a {
+  color: $color-black;
+  text-decoration: none;
+}
+
 button {
   display: inline-flex;
   flex-direction: row;
@@ -83,6 +88,9 @@ button > lucide-icon {
 
 button > a {
   font-size: 1.2rem;
+  color: $color-grey;
+
+  transition: color 0.3s ease-in-out;;
 }
 
 button.outlined {
@@ -97,9 +105,17 @@ button.outlined {
 
 button.outlined:hover {
   background-color: transparent;
-
   color: $color-blue;
+
   border-color: $color-blue;
+}
+
+button.outlined:hover > a {
+  color: $color-blue;
+}
+
+button.outlined > a {
+  color: $color-black;
 }
 
 section {
@@ -165,6 +181,11 @@ section {
   background-color: $color-red;
 }
 
+.icon-small {
+  width: 1rem;
+  height: 1rem;
+}
+
 .loader {
   z-index: 10;
   position: absolute;
@@ -175,6 +196,8 @@ section {
   height: 100%;
 
   background-color: $color-grey;
+
+  pointer-events: none;
 
   transition: opacity 1.5s ease-in-out;
 }

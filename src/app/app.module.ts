@@ -8,10 +8,10 @@ import {DotnavComponent} from './components/dotnav/dotnav.component';
 import {TitleComponent} from './components/title/title.component';
 import {
   Aperture,
-  AtSignIcon,
+  AtSignIcon, Camera,
   ChevronLeft,
   ChevronRight,
-  Coffee,
+  Coffee, Copyright,
   Download,
   Gamepad2,
   GraduationCap,
@@ -70,7 +70,9 @@ import { PhotoComponent } from './components/photo/photo.component';
       Maximize2,
       Aperture,
       Gamepad2,
-      Coffee
+      Coffee,
+      Camera,
+      Copyright
     })
   ],
   providers: [],

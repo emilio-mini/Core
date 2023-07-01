@@ -22,6 +22,8 @@
   font-size: 32rem;
   line-height: 28rem;
   color: $color-grey;
+
+  user-select: none;
 }
 
 .title.inverted > a {

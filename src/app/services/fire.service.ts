@@ -39,7 +39,8 @@ export class FireService {
     const query = await getDocs(this.galleryCollection);
     return query.docs
       .map(doc => doc.data())
-      .map(data => data as PhotoData);
+      .map(data => data as PhotoData)
+      .sort((a, b) => +a.name.split('-')[1] < +b.name.split('-')[1] ? 1 : -1);
   }
 
   async getUpdates(): Promise<UpdateData[]> {
