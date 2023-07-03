@@ -124,6 +124,8 @@ section {
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+
+  animation: $fade-animation;
 }
 
 .striped {
@@ -197,7 +199,7 @@ section {
 
   pointer-events: none;
 
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .loader::before {
@@ -215,14 +217,14 @@ section {
   transform: rotate(45deg);
   transform-origin: center;
 
-  animation: loader-animation 4s ease-in-out infinite;
+  animation: loader-animation 3s ease-in-out infinite;
 }
 
 @keyframes loader-animation {
   0% {
     left: -50%;
   }
-  25% {
+  50% {
     left: 150%;
   }
   100% {

@@ -10,6 +10,8 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 1.2rem;
+
+  animation: $fade-animation;
 }
 
 .dotnav > a {
