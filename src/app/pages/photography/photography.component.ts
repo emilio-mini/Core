@@ -2,9 +2,10 @@ import {Component} from '@angular/core';
 import {FireService} from "../../services/fire.service";
 import firebase from "firebase/compat";
 import GeoPoint = firebase.firestore.GeoPoint;
+import Timestamp = firebase.firestore.Timestamp;
 
 export type PhotoData = {
-  name: string;
+  id: string;
   type: string;
   aperture: number;
   shutterSpeed: string;
@@ -12,7 +13,9 @@ export type PhotoData = {
   iso: number;
   device: string;
   location: string;
+  resolution: string;
   coordinates: GeoPoint;
+  timestamp: Timestamp;
 }
 
 @Component({

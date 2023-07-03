@@ -32,15 +32,18 @@ export class FireService {
     this.storage = getStorage(this.app);
 
     this.updatesCollection = collection(this.db, 'spark-updates');
-    this.galleryCollection = collection(this.db, 'gallery');
+    this.galleryCollection = collection(this.db, 'pictures');
   }
 
   async getGallery(): Promise<PhotoData[]> {
     const query = await getDocs(this.galleryCollection);
     return query.docs
-      .map(doc => doc.data())
-      .map(data => data as PhotoData)
-      .sort((a, b) => +a.name.split('-')[1] < +b.name.split('-')[1] ? 1 : -1);
+      .map(doc => {
+        const photo = doc.data() as PhotoData;
+        photo.id = doc.id;
+        return photo;
+      })
+      .sort((a, b) => a.timestamp.seconds < b.timestamp.seconds ? 1 : -1);
   }
 
   async getUpdates(): Promise<UpdateData[]> {

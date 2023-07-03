@@ -1,8 +1,8 @@
-<div class="photo">
+<div #photo class="photo">
 
   <span #loader class="loader"></span>
 
-  <img [alt]="data.location" [src]="src">
+  <img *ngIf="visible" (load)="loaded()" [alt]="data.location" [src]="src">
 
   <div class="details">
 
@@ -11,7 +11,7 @@
 
     <div class="hover">
       <lucide-icon class="icon-small" name="map-pin"></lucide-icon>
-      <a href="https://www.openstreetmap.org/#map=16/{{data.coordinates.latitude}}/{{data.coordinates.longitude}}"
+      <a [href]="data.coordinates === null ? '' : 'https://www.openstreetmap.org/#map=16/{{data.coordinates.latitude}}/{{data.coordinates.longitude}}'"
          target="_blank">
         {{degrees}}
       </a>

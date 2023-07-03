@@ -11,9 +11,11 @@ export class PhotoComponent implements AfterViewInit {
 
   @Input() data!: PhotoData;
 
+  @ViewChild('photo') photoElement!: ElementRef;
   @ViewChild('loader') loaderSpan!: ElementRef;
 
   src: string | undefined;
+  visible: boolean = false;
 
   constructor(
     public fireService: FireService
@@ -22,6 +24,10 @@ export class PhotoComponent implements AfterViewInit {
 
   // Conversion as described in https://en.wikipedia.org/wiki/Decimal_degrees#Example
   get degrees(): string {
+    if (!this.data.coordinates) {
+      return '?';
+    }
+
     const latD = Math.trunc(this.data.coordinates.latitude);
     const latM = Math.trunc(60 * Math.abs(this.data.coordinates.latitude - latD));
     const latS = Math.trunc(3600 * Math.abs(this.data.coordinates.latitude - latD) - 60 * latM);
@@ -40,14 +46,43 @@ export class PhotoComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.fireService.getImageUrl('gallery/compressed/' + this.data.name + '-min.' + this.data.type).then(url => {
+    this.fireService.getImageUrl('pictures/compressed/' + this.data.id + '.' + this.data.type).then(url => {
       this.src = url;
-      this.loaderSpan.nativeElement.style.opacity = 0;
     });
+
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.toggleVisibility(true);
+        } else {
+          this.toggleVisibility(false);
+        }
+      })
+    }, {
+      threshold: 0
+    });
+    observer.observe(this.photoElement.nativeElement);
+  }
+
+  toggleVisibility(visibility: boolean): void {
+    if (visibility === this.visible) {
+      return;
+    }
+
+    if (visibility) {
+      this.visible = true;
+    } else {
+      this.visible = false;
+      this.loaderSpan.nativeElement.style.opacity = 1;
+    }
+  }
+
+  loaded(): void {
+    this.loaderSpan.nativeElement.style.opacity = 0;
   }
 
   onDownloadClick(): void {
-    this.fireService.getImageUrl('gallery/original/' + this.data.name + '.' + this.data.type).then(url => {
+    this.fireService.getImageUrl('pictures/original/' + this.data.id + '.' + this.data.type).then(url => {
       this.fireService.promptDownload(url);
     });
   }
